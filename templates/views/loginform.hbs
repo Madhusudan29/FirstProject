@@ -1,0 +1,24 @@
+{{>header}}
+{{>navbar}}
+<div class="center-div" id="login">
+    <div class="container forms w-25 border mt-5 py-3">
+        <div class="title pb-2 text-center">
+            <h2 class="font-weigth-bold">Login To Account</h2>
+            <span class="form-text">Login System For Existing Users</span>
+        </div>
+        <form action="/user/login" method="post">
+            <div class="form-group mt-2">
+                <label for="email">Email address</label>
+                <input type="email" name="email" id="email" placeholder="example@xyz.com" class="form-control">
+            </div>
+            <div class="form-group mt-2">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter Password" class="form-control">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else.</small>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Login</button>
+        </form>
+    </div>
+</div>
+{{>footer}}
